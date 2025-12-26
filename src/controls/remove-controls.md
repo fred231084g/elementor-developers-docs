@@ -6,16 +6,7 @@ To remove existing control developers can simply unregister existing control by 
 
 ## Hooks
 
-To do that we need to hook to the `elementor/controls/register` action which holds the controls manager, and pass the control name to the `unregister()` method.
-
-## Unregistering Controls
-
-To unregister existing controls use the following code:
-
-```php
-function unregister_controls( $controls_manager ) {
-
-	$controls_manager->unregister( 'control-1' );
+To do that we need to hook to the `elementor/controls/register` action which 
 	$controls_manager->unregister( 'control-2' );
 
 }
